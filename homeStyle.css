@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: serif;
+}
+    .nav {
+        display: flex;
+        font-size: 20px;
+        font-weight: 550;
+        width: 100%;
+        height: 2cm;
+        justify-content: right;
+    } .nav p{
+        margin: 15px 10px;
+    } 
+    .nav > p > a{
+        color: black;
+        text-decoration: none;
+    }
+    .nav p a:hover{
+        color: blue;
+    }
+    
+    .nav h2{
+        position: absolute;
+        left: 10%;
+        top: 12px;
+    }
+
+    .nav #regBtn{
+        position: relative;
+        bottom: 5px;
+        height: 0.8cm;
+        width: 3.5cm;
+        text-align: center;
+        padding-top: 5px;
+        background-color: rgb(77, 230, 158);
+        border-radius: 5px;
+        color: white;
+    } 
+    .nav #regBtn:hover{
+        font-size: 20px;
+        color: black; text-decoration: underline;
+    }
+
+.body-img{
+    background-image: url(img/dra.jpg);
+    background-size: cover;
+    margin: auto;
+    height: 800px;
+    width: 60%;
+} .body-img #check{
+    position: absolute;
+    left: 25%;
+    bottom: 30%;
+    height: 1.5cm;
+    width: 3.5cm;
+    opacity: 0.7;
+    box-shadow: 1px 5px 5px gray;
+    background-color: white;
+    border-radius: 3px;
+} .body-img p img{
+    height: 20px;
+    position: relative;
+    top: 7px;
+    opacity: 0.7;
+} .body-img #active{
+    box-shadow: 1px 5px 5px gray;
+    background-color: white;
+    border-radius: 3px;
+    text-align: center;
+    height: 1cm;
+    width: 3.5cm;
+    padding-top: 5px;
+    position: absolute;
+    top: 35%;
+    right: 45%;
+    opacity: 0.7;
+}
+
+.aside{
+    display: grid;
+    padding: 20px;
+    opacity: 0.5;
+    box-shadow: 0px 0px 0px white, 5px 10px 15px black;
+    position: absolute;
+    right: 25%;
+    top: 30%;
+    text-align: left;
+    height: 400px;
+    width: 8cm;
+    line-height: 0.8cm;
+    font-size: 20px;
+    border-radius: 10px;
+} .aside #quick{
+    font-size: x-large;
+} .aside #medService{
+    font-size: xx-large;
+    font-weight: 590;
+} .aside #getbtn{
+    text-align: center;
+    color: blue;
+    padding: 10px;
+    height: 1cm;
+    width: 4cm;
+    background-color: aquamarine;
+    border-radius: 5px;
+} .aside #getbtn:hover{
+    background-color: black;
+    color: white;
+}
+
+.footer-content{
+    margin: auto;
+    display: flex;
+    justify-content: right;
+    background-color: whitesmoke;
+    height: 2cm;
+    width: 100%;
+    margin-top: 5px;
+}
+    .footer{
+        height: 1cm;
+        padding-top: 15px ;
+        position: relative;
+        right: 10cm;
+    }
+    .img1{
+        margin-right: 10px;
+    } .img1:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+    .img2{
+        margin-right: 10px;
+    }.img2:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+    .img3{
+        margin-right: 10px;
+    }.img3:hover{
+        transform: rotate(360deg);
+        transition: 1s;
+    }
+
+
+
+
+    @media only screen and (max-width: 320px){
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .nav{
+            display: grid;
+            height: 1.5cm;
+            width: 320px;
+            text-align: center;
+            overflow: scroll;
+        }
+        .nav p{
+            margin: 3px 0;
+            font-weight: 500;
+            background-color: wheat;
+            border-radius: 5px;
+        }
+
+        .nav p:hover{
+            background-color: antiquewhite;
+        }
+
+        .nav > h2{
+            height: 2cm;
+            width: 3cm;
+            position: absolute;
+            left: 35px;
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        .body-img{
+            background-image: url(img/dra.jpg);
+            position: relative;
+            height: 4in;
+            width: 100%;
+            box-shadow: 5px 5px 5px grey;
+        }
+
+        .body-img #check{
+            bottom: 20%;
+            left: 20px;
+        }
+
+        .body-img #active{
+            position: relative;
+            left: 6.5%;
+            top: 52%;
+        }
+
+        .aside{
+            background-color: wheat;
+            position: relative;
+            left: 5px;
+            height: 2in;
+            width: 2.81in;
+            margin-top: 5px;
+        }
+
+        .aside #quick{
+            color: maroon;
+        }
+
+        .aside #medService{
+            margin: 10px;
+            color: maroon;
+        }
+        .aside p{
+            text-align: center;
+            font-size: 12px;
+            line-height: 20px;
+        }
+
+        .aside #getbtn{
+            position: relative;
+            left: 70px;
+            height: .5cm;
+            width: 3cm;
+            font-size: 18px;
+        }
+
+        .footer-content{
+            margin-top: 5px;
+            width: 100%;
+        }
+
+        .footer{
+            position: relative;
+            right: 90px;
+        }
+    }
